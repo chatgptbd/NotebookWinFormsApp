@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\employee\\employeeentryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|solutionrelative:employee\\employeeentryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|g:\\notebook ran\\tesst\\notebookwinformsapp\\employee\\employeeentryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|solutionrelative:employee\\employeeentryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|g:\\notebook ran\\tesst\\notebookwinformsapp\\employee\\employeelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|solutionrelative:employee\\employeelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|g:\\notebook ran\\tesst\\notebookwinformsapp\\income\\incomeentryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|solutionrelative:income\\incomeentryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IncomeEntryForm.Designer.cs",
+              "DocumentMoniker": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\Income\\IncomeEntryForm.Designer.cs",
+              "RelativeDocumentMoniker": "Income\\IncomeEntryForm.Designer.cs",
+              "ToolTip": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\Income\\IncomeEntryForm.Designer.cs",
+              "RelativeToolTip": "Income\\IncomeEntryForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T01:09:57.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeEntryForm.cs [Design]",
+              "DocumentMoniker": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\Employee\\EmployeeEntryForm.cs",
+              "RelativeDocumentMoniker": "Employee\\EmployeeEntryForm.cs",
+              "ToolTip": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\Employee\\EmployeeEntryForm.cs [Design]",
+              "RelativeToolTip": "Employee\\EmployeeEntryForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T01:04:05.729Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeEntryForm.cs",
+              "DocumentMoniker": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\Employee\\EmployeeEntryForm.cs",
+              "RelativeDocumentMoniker": "Employee\\EmployeeEntryForm.cs",
+              "ToolTip": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\Employee\\EmployeeEntryForm.cs",
+              "RelativeToolTip": "Employee\\EmployeeEntryForm.cs",
+              "ViewState": "AgIAAE8BAAAAAAAAAAAAAFoBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T00:41:23.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeListForm.cs",
+              "DocumentMoniker": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\Employee\\EmployeeListForm.cs",
+              "RelativeDocumentMoniker": "Employee\\EmployeeListForm.cs",
+              "ToolTip": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\Employee\\EmployeeListForm.cs",
+              "RelativeToolTip": "Employee\\EmployeeListForm.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAmwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T12:24:24.354Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
