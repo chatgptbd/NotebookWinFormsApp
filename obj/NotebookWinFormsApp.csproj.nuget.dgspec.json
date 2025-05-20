@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\NotebookWinFormsApp.csproj": {}
+    "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\NotebookWinFormsApp.csproj": {}
   },
   "projects": {
-    "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\NotebookWinFormsApp.csproj": {
+    "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\NotebookWinFormsApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\NotebookWinFormsApp.csproj",
+        "projectUniqueName": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\NotebookWinFormsApp.csproj",
         "projectName": "NotebookWinFormsApp",
-        "projectPath": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\NotebookWinFormsApp.csproj",
+        "projectPath": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\NotebookWinFormsApp.csproj",
         "packagesPath": "C:\\Users\\SHAMIM\\.nuget\\packages\\",
-        "outputPath": "G:\\NOTEBOOK RAN\\tesst\\NotebookWinFormsApp\\obj\\",
+        "outputPath": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
