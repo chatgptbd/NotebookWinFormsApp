@@ -1,13 +1,16 @@
-﻿using System;
-using System.Data;
-using System.Data.SQLite;
+﻿// NewRegisterShopForm.cs
+using System; 
+using System.Data; 
+using System.Data.SQLite; 
 using System.Windows.Forms;
+
+
 
 namespace NotebookWinFormsApp
 {
     public partial class NewRegisterShopForm : Form
     {
-        public string SelectedShopCode { get; set; }
+        public TextBox TxtShopCode => txtShopCode; public TextBox TxtShopName => txtShopName; public TextBox TxtOwnerName => txtOwnerName; public TextBox TxtMobile => txtMobile; public TextBox TxtAddress => txtAddress; public TextBox TxtEmail => txtEmail; public ComboBox CmbShopType => cmbShopType; public DateTimePicker DtpOpeningDate => dtpOpeningDate; public TextBox TxtLicenseNo => txtLicenseNo; public ComboBox CmbStatus => cmbStatus;
 
         public NewRegisterShopForm()
         {
@@ -19,7 +22,6 @@ namespace NotebookWinFormsApp
         {
             cmbShopType.Items.AddRange(new string[] { "Grocery", "Pharmacy", "Electronics", "Stationery" });
             cmbStatus.Items.AddRange(new string[] { "Active", "Inactive" });
-
             GenerateShopCode();
             txtShopName.Focus();
         }
@@ -43,13 +45,11 @@ namespace NotebookWinFormsApp
             using (SQLiteConnection conn = new SQLiteConnection(connectionString))
             {
                 conn.Open();
-
                 string checkQuery = "SELECT COUNT(*) FROM Shops WHERE ShopCode = @ShopCode";
                 using (SQLiteCommand checkCmd = new SQLiteCommand(checkQuery, conn))
                 {
                     checkCmd.Parameters.AddWithValue("@ShopCode", txtShopCode.Text);
                     long count = (long)checkCmd.ExecuteScalar();
-
                     if (count > 0)
                     {
                         MessageBox.Show("This Shop Code already exists. Please click 'Update'.");
@@ -59,8 +59,8 @@ namespace NotebookWinFormsApp
                 }
 
                 string insertQuery = @"
-                    INSERT INTO Shops (ShopCode, ShopName, OwnerName, Mobile, Address, Email, ShopType, OpeningDate, LicenseNo, Status)
-                    VALUES (@ShopCode, @ShopName, @OwnerName, @Mobile, @Address, @Email, @ShopType, @OpeningDate, @LicenseNo, @Status)";
+                INSERT INTO Shops (ShopCode, ShopName, OwnerName, Mobile, Address, Email, ShopType, OpeningDate, LicenseNo, Status)
+                VALUES (@ShopCode, @ShopName, @OwnerName, @Mobile, @Address, @Email, @ShopType, @OpeningDate, @LicenseNo, @Status)";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(insertQuery, conn))
                 {
@@ -74,7 +74,6 @@ namespace NotebookWinFormsApp
                     cmd.Parameters.AddWithValue("@OpeningDate", dtpOpeningDate.Value.ToString("yyyy-MM-dd"));
                     cmd.Parameters.AddWithValue("@LicenseNo", txtLicenseNo.Text);
                     cmd.Parameters.AddWithValue("@Status", cmbStatus.Text);
-
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -87,51 +86,9 @@ namespace NotebookWinFormsApp
 
         private void btnGetData_Click(object sender, EventArgs e)
         {
-            ShopListForm listForm = new ShopListForm(this);
-            listForm.ShowDialog();
-
-            if (string.IsNullOrEmpty(SelectedShopCode))
+            using (ShopListForm listForm = new ShopListForm(this))
             {
-                txtShopName.Focus();
-                return;
-            }
-
-            LoadShopData();
-            txtShopName.Focus();
-        }
-
-        private void LoadShopData()
-        {
-            string connectionString = "Data Source=Notebook.db;Version=3;";
-            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
-            {
-                conn.Open();
-                string query = "SELECT * FROM Shops WHERE ShopCode = @ShopCode";
-
-                using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@ShopCode", SelectedShopCode);
-                    using (SQLiteDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            txtShopCode.Text = reader["ShopCode"].ToString();
-                            txtShopName.Text = reader["ShopName"].ToString();
-                            txtOwnerName.Text = reader["OwnerName"].ToString();
-                            txtMobile.Text = reader["Mobile"].ToString();
-                            txtAddress.Text = reader["Address"].ToString();
-                            txtEmail.Text = reader["Email"].ToString();
-                            cmbShopType.Text = reader["ShopType"].ToString();
-                            dtpOpeningDate.Value = DateTime.Parse(reader["OpeningDate"].ToString());
-                            txtLicenseNo.Text = reader["LicenseNo"].ToString();
-                            cmbStatus.Text = reader["Status"].ToString();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Shop not found.");
-                        }
-                    }
-                }
+                listForm.ShowDialog();
             }
         }
 
@@ -148,19 +105,18 @@ namespace NotebookWinFormsApp
             using (SQLiteConnection conn = new SQLiteConnection(connectionString))
             {
                 conn.Open();
-
                 string updateQuery = @"
-                    UPDATE Shops SET 
-                        ShopName = @ShopName,
-                        OwnerName = @OwnerName,
-                        Mobile = @Mobile,
-                        Address = @Address,
-                        Email = @Email,
-                        ShopType = @ShopType,
-                        OpeningDate = @OpeningDate,
-                        LicenseNo = @LicenseNo,
-                        Status = @Status
-                    WHERE ShopCode = @ShopCode";
+                UPDATE Shops SET
+                    ShopName = @ShopName,
+                    OwnerName = @OwnerName,
+                    Mobile = @Mobile,
+                    Address = @Address,
+                    Email = @Email,
+                    ShopType = @ShopType,
+                    OpeningDate = @OpeningDate,
+                    LicenseNo = @LicenseNo,
+                    Status = @Status
+                WHERE ShopCode = @ShopCode";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(updateQuery, conn))
                 {
@@ -174,7 +130,6 @@ namespace NotebookWinFormsApp
                     cmd.Parameters.AddWithValue("@LicenseNo", txtLicenseNo.Text);
                     cmd.Parameters.AddWithValue("@Status", cmbStatus.Text);
                     cmd.Parameters.AddWithValue("@ShopCode", txtShopCode.Text);
-
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -202,7 +157,6 @@ namespace NotebookWinFormsApp
                 {
                     conn.Open();
                     string deleteQuery = "DELETE FROM Shops WHERE ShopCode = @ShopCode";
-
                     using (SQLiteCommand cmd = new SQLiteCommand(deleteQuery, conn))
                     {
                         cmd.Parameters.AddWithValue("@ShopCode", txtShopCode.Text);
@@ -270,4 +224,5 @@ namespace NotebookWinFormsApp
             }
         }
     }
+
 }

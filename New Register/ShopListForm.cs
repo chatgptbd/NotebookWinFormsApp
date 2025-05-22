@@ -2,25 +2,21 @@
 using System.Data;
 using System.Data.SQLite;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace NotebookWinFormsApp
 {
     public partial class ShopListForm : Form
     {
-        private NewRegisterShopForm parentForm;
-        private DataTable shopTable;
+        private Form parentForm;
 
-        public ShopListForm(NewRegisterShopForm form)
+        public ShopListForm(Form form)
         {
             InitializeComponent();
-            parentForm = form;
+            this.parentForm = form;
         }
 
         private void ShopListForm_Load(object sender, EventArgs e)
         {
-            cmbSearchBy.Items.AddRange(new string[] { "ShopName", "OwnerName", "Mobile" });
-            cmbSearchBy.SelectedIndex = 0;
             LoadShopList();
         }
 
@@ -30,51 +26,59 @@ namespace NotebookWinFormsApp
             using (SQLiteConnection conn = new SQLiteConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT * FROM Shops ORDER BY ShopName";
-                using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
+                string query = "SELECT * FROM Shops ORDER BY Id DESC";
+                using (SQLiteDataAdapter adapter = new SQLiteDataAdapter(query, conn))
                 {
-                    using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
-                    {
-                        shopTable = new DataTable();
-                        da.Fill(shopTable);
-                        dataGridView1.AutoGenerateColumns = true;
-                        dataGridView1.DataSource = shopTable;
-                    }
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dataGridView1.DataSource = dt;
                 }
             }
         }
 
-        private void txtSearch_TextChanged(object sender, EventArgs e)
+        private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (shopTable == null || cmbSearchBy.SelectedItem == null) return;
-
-            string column = cmbSearchBy.SelectedItem.ToString();
-            string search = txtSearch.Text.Replace("'", "''");
-
-            shopTable.DefaultView.RowFilter = $"{column} LIKE '%{search}%'";
-        }
-
-        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                string selectedCode = dataGridView1.Rows[e.RowIndex].Cells["ShopCode"].Value.ToString();
-                parentForm.SelectedShopCode = selectedCode;
-            }
-        }
-
-        private void dataGridViw1_KeyDown(object sender, KeyEventArgs e)
-        {
-                    
             if (e.KeyCode == Keys.Enter && dataGridView1.CurrentRow != null)
             {
-                e.Handled = true; // Enter key ডিফল্ট একশন বন্ধ
+                e.Handled = true;
+
                 string selectedCode = dataGridView1.CurrentRow.Cells["ShopCode"].Value.ToString();
-                parentForm.SelectedShopCode = selectedCode;
+                string selectedName = dataGridView1.CurrentRow.Cells["ShopName"].Value.ToString();
+                string selectedOwner = dataGridView1.CurrentRow.Cells["OwnerName"].Value.ToString();
+                string selectedMobile = dataGridView1.CurrentRow.Cells["Mobile"].Value.ToString();
+                string selectedAddress = dataGridView1.CurrentRow.Cells["Address"].Value.ToString();
+                string selectedEmail = dataGridView1.CurrentRow.Cells["Email"].Value.ToString();
+                string selectedType = dataGridView1.CurrentRow.Cells["ShopType"].Value.ToString();
+                string selectedDate = dataGridView1.CurrentRow.Cells["OpeningDate"].Value.ToString();
+                string selectedLicense = dataGridView1.CurrentRow.Cells["LicenseNo"].Value.ToString();
+                string selectedStatus = dataGridView1.CurrentRow.Cells["Status"].Value.ToString();
+
+                DialogResult confirm = MessageBox.Show("আপনি কি এই শপটি সিলেক্ট করতে চান?", "Confirm", MessageBoxButtons.YesNo);
+                if (confirm != DialogResult.Yes) return;
+
+                if (parentForm is NewRegisterShopForm newForm)
+                {
+                    newForm.TxtShopCode.Text = selectedCode;
+                    newForm.TxtShopName.Text = selectedName;
+                    newForm.TxtOwnerName.Text = selectedOwner;
+                    newForm.TxtMobile.Text = selectedMobile;
+                    newForm.TxtAddress.Text = selectedAddress;
+                    newForm.TxtEmail.Text = selectedEmail;
+                    newForm.CmbShopType.Text = selectedType;
+                    newForm.DtpOpeningDate.Value = DateTime.Parse(selectedDate);
+                    newForm.TxtLicenseNo.Text = selectedLicense;
+                    newForm.CmbStatus.Text = selectedStatus;
+                }
+                else if (parentForm is EmployeeEntryForm empForm)
+                {
+                    empForm.TxtShopCode.Text = selectedCode;
+                    empForm.TxtShopName.Text = selectedName;
+                    empForm.TxtShopAddress.Text = selectedAddress;
+                }
+
                 this.Close();
             }
         }
-
     }
-    
+
 }

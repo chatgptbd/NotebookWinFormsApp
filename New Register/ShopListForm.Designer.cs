@@ -39,7 +39,7 @@ namespace NotebookWinFormsApp
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new System.Drawing.Size(250, 23);
             txtSearch.TabIndex = 1;
-            txtSearch.TextChanged += txtSearch_TextChanged;
+         
             // 
             // dataGridView1
             // 
@@ -49,14 +49,14 @@ namespace NotebookWinFormsApp
             dataGridView1.Location = new System.Drawing.Point(20, 60);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new System.Drawing.Size(750, 350);
+            dataGridView1.Size = new System.Drawing.Size(1078, 476);
             dataGridView1.TabIndex = 2;
-            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
-            dataGridView1.KeyDown += dataGridViw1_KeyDown;
+
+            dataGridView1.KeyDown += dataGridView1_KeyDown;
             // 
             // ShopListForm
             // 
-            ClientSize = new System.Drawing.Size(800, 450);
+            ClientSize = new System.Drawing.Size(1134, 548);
             Controls.Add(cmbSearchBy);
             Controls.Add(txtSearch);
             Controls.Add(dataGridView1);
@@ -73,5 +73,12 @@ namespace NotebookWinFormsApp
         private System.Windows.Forms.ComboBox cmbSearchBy;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dataGridView1;
+
+        public System.Windows.Forms.TextBox txtShopCode;
+        public System.Windows.Forms.TextBox txtShopName;
+        public System.Windows.Forms.TextBox txtAddress;
+
+
+
     }
 }

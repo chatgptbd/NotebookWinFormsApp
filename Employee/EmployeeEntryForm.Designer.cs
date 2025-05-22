@@ -1,33 +1,33 @@
-﻿namespace NotebookWinFormsApp
-{
-    partial class EmployeeEntryForm
-    {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
+﻿namespace NotebookWinFormsApp // 1
+{ // 2
+    partial class EmployeeEntryForm // 3
+    { // 4
+        /// <summary> // 5
+        /// Required designer variable. // 6
+        /// </summary> // 7
+        private System.ComponentModel.IContainer components = null; // 8
+                                                                    // 9
+        /// <summary> // 10
+        /// Clean up any resources being used. // 11
+        /// </summary> // 12
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param> // 13
+        protected override void Dispose(bool disposing) // 14
+        { // 15
+            if (disposing && (components != null)) // 16
+            { // 17
+                components.Dispose(); // 18
+            } // 19
+            base.Dispose(disposing); // 20
+        } // 21
+          // 22
+        #region Windows Form Designer generated code // 23
+        // 24
+        /// <summary> // 25
+        /// Required method for Designer support - do not modify // 26
+        /// the contents of this method with the code editor. // 27
+        /// </summary> // 28
+        private void InitializeComponent() // 29
+        { // 30
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -67,6 +67,14 @@
             btnClose = new System.Windows.Forms.Button();
             txtNote = new System.Windows.Forms.TextBox();
             label15 = new System.Windows.Forms.Label();
+            btnF1 = new System.Windows.Forms.Button();
+            label16 = new System.Windows.Forms.Label();
+            txtShopCode = new System.Windows.Forms.TextBox();
+            txtShopName = new System.Windows.Forms.TextBox();
+            txtShopAddress = new System.Windows.Forms.TextBox();
+            label17 = new System.Windows.Forms.Label();
+            label18 = new System.Windows.Forms.Label();
+            label19 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)picPhoto).BeginInit();
             SuspendLayout();
             // 
@@ -427,10 +435,10 @@
             // 
             // txtNote
             // 
-            txtNote.Location = new System.Drawing.Point(554, 334);
+            txtNote.Location = new System.Drawing.Point(554, 458);
             txtNote.Multiline = true;
             txtNote.Name = "txtNote";
-            txtNote.Size = new System.Drawing.Size(345, 202);
+            txtNote.Size = new System.Drawing.Size(345, 78);
             txtNote.TabIndex = 15;
             // 
             // label15
@@ -439,17 +447,101 @@
             label15.BackColor = System.Drawing.Color.Salmon;
             label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             label15.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label15.Location = new System.Drawing.Point(643, 293);
+            label15.Location = new System.Drawing.Point(561, 421);
             label15.Name = "label15";
             label15.Size = new System.Drawing.Size(61, 32);
             label15.TabIndex = 39;
             label15.Text = "Note";
+            // 
+            // btnF1
+            // 
+            btnF1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btnF1.Location = new System.Drawing.Point(681, 245);
+            btnF1.Name = "btnF1";
+            btnF1.Size = new System.Drawing.Size(75, 26);
+            btnF1.TabIndex = 40;
+            btnF1.Text = "F1";
+            btnF1.UseVisualStyleBackColor = true;
+            btnF1.Click += btnF1_Click;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label16.Location = new System.Drawing.Point(819, 280);
+            label16.Name = "label16";
+            label16.Size = new System.Drawing.Size(74, 21);
+            label16.TabIndex = 41;
+            label16.Text = "Shop List";
+            // 
+            // txtShopCode
+            // 
+            txtShopCode.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            txtShopCode.Location = new System.Drawing.Point(662, 277);
+            txtShopCode.Name = "txtShopCode";
+            txtShopCode.Size = new System.Drawing.Size(151, 29);
+            txtShopCode.TabIndex = 42;
+            // 
+            // txtShopName
+            // 
+            txtShopName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            txtShopName.Location = new System.Drawing.Point(662, 312);
+            txtShopName.Name = "txtShopName";
+            txtShopName.Size = new System.Drawing.Size(231, 29);
+            txtShopName.TabIndex = 43;
+            // 
+            // txtShopAddress
+            // 
+            txtShopAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            txtShopAddress.Location = new System.Drawing.Point(662, 351);
+            txtShopAddress.Multiline = true;
+            txtShopAddress.Name = "txtShopAddress";
+            txtShopAddress.Size = new System.Drawing.Size(231, 55);
+            txtShopAddress.TabIndex = 44;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label17.Location = new System.Drawing.Point(550, 283);
+            label17.Name = "label17";
+            label17.Size = new System.Drawing.Size(86, 21);
+            label17.TabIndex = 45;
+            label17.Text = "Shop Code";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label18.Location = new System.Drawing.Point(550, 317);
+            label18.Name = "label18";
+            label18.Size = new System.Drawing.Size(92, 21);
+            label18.TabIndex = 46;
+            label18.Text = "Shop Name";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label19.Location = new System.Drawing.Point(550, 366);
+            label19.Name = "label19";
+            label19.Size = new System.Drawing.Size(106, 21);
+            label19.TabIndex = 47;
+            label19.Text = "Shop Address";
             // 
             // EmployeeEntryForm
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(928, 595);
+            Controls.Add(label19);
+            Controls.Add(label18);
+            Controls.Add(label17);
+            Controls.Add(txtShopAddress);
+            Controls.Add(txtShopName);
+            Controls.Add(txtShopCode);
+            Controls.Add(label16);
+            Controls.Add(btnF1);
             Controls.Add(label15);
             Controls.Add(txtNote);
             Controls.Add(btnClose);
@@ -495,48 +587,56 @@
             ((System.ComponentModel.ISupportInitialize)picPhoto).EndInit();
             ResumeLayout(false);
             PerformLayout();
-        }
-
-        #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtEmpCode;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtFatherName;
-        private System.Windows.Forms.TextBox txtMotherName;
-        private System.Windows.Forms.TextBox txtMobileNo;
-        private System.Windows.Forms.TextBox txtEmergencyContact;
-        private System.Windows.Forms.TextBox txtNationalId;
-        private System.Windows.Forms.DateTimePicker dtpDob;
-        private System.Windows.Forms.ComboBox cmbGender;
-        private System.Windows.Forms.ComboBox cmbMaritalStatus;
-        private System.Windows.Forms.TextBox txtPresentAddress;
-        private System.Windows.Forms.TextBox txtPermanentAddress;
-        private System.Windows.Forms.DateTimePicker dtpJoinDate;
-        private System.Windows.Forms.TextBox txtInitialSalary;
-        private System.Windows.Forms.PictureBox picPhoto;
-        private System.Windows.Forms.Button btnSelectImage;
-        private System.Windows.Forms.Button btnRemoveImage;
-        private System.Windows.Forms.Button btnNew;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnGetData;
-        private System.Windows.Forms.Button btnUpDate;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.TextBox txtNote;
-        private System.Windows.Forms.Label label15;
-    }
-}
+        } // 553
+          // 554
+        #endregion // 555
+        // 556
+        private System.Windows.Forms.Label label1; // 557
+        private System.Windows.Forms.Label label2; // 558
+        private System.Windows.Forms.Label label3; // 559
+        private System.Windows.Forms.Label label4; // 560
+        private System.Windows.Forms.Label label5; // 561
+        private System.Windows.Forms.Label label6; // 562
+        private System.Windows.Forms.Label label7; // 563
+        private System.Windows.Forms.Label label8; // 564
+        private System.Windows.Forms.Label label9; // 565
+        private System.Windows.Forms.Label label10; // 566
+        private System.Windows.Forms.Label label11; // 567
+        private System.Windows.Forms.Label label12; // 568
+        private System.Windows.Forms.Label label13; // 569
+        private System.Windows.Forms.Label label14; // 570
+        private System.Windows.Forms.TextBox txtEmpCode; // 571
+        private System.Windows.Forms.TextBox txtName; // 572
+        private System.Windows.Forms.TextBox txtFatherName; // 573
+        private System.Windows.Forms.TextBox txtMotherName; // 574
+        private System.Windows.Forms.TextBox txtMobileNo; // 575
+        private System.Windows.Forms.TextBox txtEmergencyContact; // 576
+        private System.Windows.Forms.TextBox txtNationalId; // 577
+        private System.Windows.Forms.DateTimePicker dtpDob; // 578
+        private System.Windows.Forms.ComboBox cmbGender; // 579
+        private System.Windows.Forms.ComboBox cmbMaritalStatus; // 580
+        private System.Windows.Forms.TextBox txtPresentAddress; // 581
+        private System.Windows.Forms.TextBox txtPermanentAddress; // 582
+        private System.Windows.Forms.DateTimePicker dtpJoinDate; // 583
+        private System.Windows.Forms.TextBox txtInitialSalary; // 584
+        private System.Windows.Forms.PictureBox picPhoto; // 585
+        private System.Windows.Forms.Button btnSelectImage; // 586
+        private System.Windows.Forms.Button btnRemoveImage; // 587
+        private System.Windows.Forms.Button btnNew; // 588
+        private System.Windows.Forms.Button btnSave; // 589
+        private System.Windows.Forms.Button btnGetData; // 590
+        private System.Windows.Forms.Button btnUpDate; // 591
+        private System.Windows.Forms.Button btnDelete; // 592
+        private System.Windows.Forms.Button btnClose; // 593
+        private System.Windows.Forms.TextBox txtNote; // 594
+        private System.Windows.Forms.Label label15; // 595
+        private System.Windows.Forms.Button btnF1; // 596
+        private System.Windows.Forms.Label label16; // 597
+        private System.Windows.Forms.TextBox txtShopCode; // 598
+        private System.Windows.Forms.TextBox txtShopName; // 599
+        private System.Windows.Forms.TextBox txtShopAddress; // 600
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+    } // 601
+} // 602

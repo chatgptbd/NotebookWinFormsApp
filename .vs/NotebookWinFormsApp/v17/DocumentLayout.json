@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\",
+  "WorkspaceRootPath": "G:\\NEW TEST\\NotebookWinFormsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|g:\\new test\\new folder\\notebookwinformsapp\\shopaccessform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|solutionrelative:shopaccessform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|g:\\new test\\notebookwinformsapp\\new register\\shoplistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|solutionrelative:new register\\shoplistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|g:\\new test\\new folder\\notebookwinformsapp\\employee\\employeelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|solutionrelative:employee\\employeelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|g:\\new test\\notebookwinformsapp\\new register\\newregistershopform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|solutionrelative:new register\\newregistershopform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|g:\\new test\\new folder\\notebookwinformsapp\\employee\\employeeentryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|g:\\new test\\notebookwinformsapp\\employee\\employeeentryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|solutionrelative:employee\\employeeentryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\employee\\employeeentryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|solutionrelative:employee\\employeeentryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|g:\\new test\\new folder\\notebookwinformsapp\\income\\incomeentryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6604581-D005-0D50-4477-4475203C2325}|NotebookWinFormsApp.csproj|solutionrelative:income\\incomeentryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,64 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ShopAccessForm.cs [Design]",
-              "DocumentMoniker": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\ShopAccessForm.cs",
-              "RelativeDocumentMoniker": "ShopAccessForm.cs",
-              "ToolTip": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\ShopAccessForm.cs [Design]",
-              "RelativeToolTip": "ShopAccessForm.cs [Design]",
+              "Title": "ShopListForm.cs",
+              "DocumentMoniker": "G:\\NEW TEST\\NotebookWinFormsApp\\New Register\\ShopListForm.cs",
+              "RelativeDocumentMoniker": "New Register\\ShopListForm.cs",
+              "ToolTip": "G:\\NEW TEST\\NotebookWinFormsApp\\New Register\\ShopListForm.cs",
+              "RelativeToolTip": "New Register\\ShopListForm.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAUwDcAAACAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T01:20:51.303Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IncomeEntryForm.Designer.cs",
-              "DocumentMoniker": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\Income\\IncomeEntryForm.Designer.cs",
-              "RelativeDocumentMoniker": "Income\\IncomeEntryForm.Designer.cs",
-              "ToolTip": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\Income\\IncomeEntryForm.Designer.cs",
-              "RelativeToolTip": "Income\\IncomeEntryForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T01:09:57.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmployeeEntryForm.cs [Design]",
-              "DocumentMoniker": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\Employee\\EmployeeEntryForm.cs",
-              "RelativeDocumentMoniker": "Employee\\EmployeeEntryForm.cs",
-              "ToolTip": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\Employee\\EmployeeEntryForm.cs [Design]",
-              "RelativeToolTip": "Employee\\EmployeeEntryForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T01:04:05.729Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmployeeEntryForm.cs",
-              "DocumentMoniker": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\Employee\\EmployeeEntryForm.cs",
-              "RelativeDocumentMoniker": "Employee\\EmployeeEntryForm.cs",
-              "ToolTip": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\Employee\\EmployeeEntryForm.cs",
-              "RelativeToolTip": "Employee\\EmployeeEntryForm.cs",
-              "ViewState": "AgIAADMBAAAAAAAAAAAAAGYBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T00:41:23.781Z",
+              "WhenOpened": "2025-05-21T16:42:49.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EmployeeListForm.cs",
-              "DocumentMoniker": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\Employee\\EmployeeListForm.cs",
-              "RelativeDocumentMoniker": "Employee\\EmployeeListForm.cs",
-              "ToolTip": "G:\\NEW TEST\\New folder\\NotebookWinFormsApp\\Employee\\EmployeeListForm.cs",
-              "RelativeToolTip": "Employee\\EmployeeListForm.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAmwAYAAAAAAAAAAAAAAA==",
+              "Title": "NewRegisterShopForm.cs",
+              "DocumentMoniker": "G:\\NEW TEST\\NotebookWinFormsApp\\New Register\\NewRegisterShopForm.cs",
+              "RelativeDocumentMoniker": "New Register\\NewRegisterShopForm.cs",
+              "ToolTip": "G:\\NEW TEST\\NotebookWinFormsApp\\New Register\\NewRegisterShopForm.cs",
+              "RelativeToolTip": "New Register\\NewRegisterShopForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T12:24:24.354Z",
+              "WhenOpened": "2025-05-21T12:19:53.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeEntryForm.cs",
+              "DocumentMoniker": "G:\\NEW TEST\\NotebookWinFormsApp\\Employee\\EmployeeEntryForm.cs",
+              "RelativeDocumentMoniker": "Employee\\EmployeeEntryForm.cs",
+              "ToolTip": "G:\\NEW TEST\\NotebookWinFormsApp\\Employee\\EmployeeEntryForm.cs",
+              "RelativeToolTip": "Employee\\EmployeeEntryForm.cs",
+              "ViewState": "AgIAABQBAAAAAAAAAAAAwEMBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T09:07:59.022Z",
               "EditorCaption": ""
             }
           ]
