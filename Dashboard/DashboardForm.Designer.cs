@@ -40,6 +40,7 @@
             employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             employeeEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             advenceEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            bonusEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -115,7 +116,7 @@
             // 
             // employeeToolStripMenuItem
             // 
-            employeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { employeeEntryToolStripMenuItem, advenceEntryToolStripMenuItem });
+            employeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { employeeEntryToolStripMenuItem, advenceEntryToolStripMenuItem, bonusEntryToolStripMenuItem });
             employeeToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
             employeeToolStripMenuItem.Size = new System.Drawing.Size(90, 25);
@@ -134,6 +135,13 @@
             advenceEntryToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             advenceEntryToolStripMenuItem.Text = "Advence Entry";
             advenceEntryToolStripMenuItem.Click += advenceEntryToolStripMenuItem_Click;
+            // 
+            // bonusEntryToolStripMenuItem
+            // 
+            bonusEntryToolStripMenuItem.Name = "bonusEntryToolStripMenuItem";
+            bonusEntryToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            bonusEntryToolStripMenuItem.Text = "BonusEntry";
+            bonusEntryToolStripMenuItem.Click += bonusEntryToolStripMenuItem_Click;
             // 
             // DashboardForm
             // 
@@ -163,5 +171,6 @@
         private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeeEntryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem advenceEntryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bonusEntryToolStripMenuItem;
     }
 }

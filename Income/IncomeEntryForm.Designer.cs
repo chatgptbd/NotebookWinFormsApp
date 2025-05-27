@@ -151,7 +151,7 @@
             // 
             // lblMonthlyAmount
             // 
-            lblMonthlyAmount.BackColor = System.Drawing.Color.Yellow;
+            lblMonthlyAmount.BackColor = System.Drawing.Color.Cornsilk;
             lblMonthlyAmount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             lblMonthlyAmount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             lblMonthlyAmount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -164,7 +164,7 @@
             // 
             // lblYearAmount
             // 
-            lblYearAmount.BackColor = System.Drawing.Color.Yellow;
+            lblYearAmount.BackColor = System.Drawing.Color.Cornsilk;
             lblYearAmount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             lblYearAmount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lblYearAmount.Location = new System.Drawing.Point(782, 252);

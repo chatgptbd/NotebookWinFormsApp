@@ -63,6 +63,12 @@ namespace NotebookWinFormsApp
             AdvanceEntryForm advanceEntryForm = new AdvanceEntryForm();
             advanceEntryForm.ShowDialog();
         }
+
+        private void bonusEntryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BonusEntryForm bonusForm = new BonusEntryForm();
+            bonusForm.ShowDialog();
+        }
     }
 
 }
